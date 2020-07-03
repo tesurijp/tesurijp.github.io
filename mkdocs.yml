@@ -2,3 +2,9 @@ site_name: てすりのよしなし事
 
 nav:
     - index.md
+
+remote_branch: master
+
+plugins:
+  - search
+  - git-revision-date-localized
