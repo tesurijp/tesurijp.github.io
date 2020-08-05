@@ -18,7 +18,6 @@
 - Chromebook  
   [VSCode](Chromebook/VSCode)  
   [ReaderStore](Chromebook/ReaderStore)  
-  [ARMモデルでADB](Chromebook/ARM_ADB)  
 
 
 ### 古い情報
