@@ -18,6 +18,7 @@
 - Chromebook  
   [VSCode](Chromebook/VSCode)  
   [ReaderStore](Chromebook/ReaderStore)  
+  [CrostiniでZsh](Chromebook/Crostini-zsh)  
 
 
 ### 古い情報
