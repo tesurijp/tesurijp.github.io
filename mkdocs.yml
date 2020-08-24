@@ -8,3 +8,4 @@ remote_branch: master
 plugins:
   - search
   - git-revision-date-localized
+  - del_ins
