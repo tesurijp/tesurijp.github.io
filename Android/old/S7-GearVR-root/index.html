@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>S7 GearVR root - てすりのよしなし事</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">てすりのよしなし事</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#root" class="nav-link">すでに root 化してしまっている場合</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#root_1" class="nav-link">root化</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>Galaxy S7で rooted 環境で GearVR を使う</p>
+<p>root 化した環境に GearVR を買ってきて繋いでも ネットワークエラーとなって使えない。</p>
+<p>odin で stock rom をやきなおしたり、Factory Reset しても駄目。<br />
+一旦 root 化した端末では、SmartSwitch を使ったリカバリを行なわなければ GearVR が使えるようにはならない。</p>
+<p>rooted 端末で拒否されるのは GearVR の初回起動時のチェックのみらしく、GearVR を接続して必要なアプリ群がインストールされた後、root 化を行なえば、GearVR が使える状態のまま root 環境も使えている。<br />
+Oculus Store からのアプリインストールも確認できた。</p>
+<h2 id="root">すでに root 化してしまっている場合</h2>
+<p>SmartSwitch でリカバリが必要</p>
+<ul>
+<li>完全に初期化するので、必要なデータ類はバックアップ。</li>
+<li>PC用の SmartSwitch をインストール (http://www.samsung.com/jp/support/smartswitch/#pc_version)</li>
+<li>SmartSwitch 上で、PC と Galaxy を接続し、ドライバ類が入っていることを確認</li>
+<li>USBケーブルをぬいて、端末がつながっていない状態にする</li>
+<li>SmartSwitch のメニュー(「その他」と書いてるやつ)から、「緊急ソフトウェアリカバリーと初期化」を開く</li>
+<li>「端末の初期化」タブで、モデル名 ( SM-G930FD とか、SM-G930F とか )を入力して、検索ボタン</li>
+<li>S/N の入力欄が出てくるので、S/N を入力して確認ボタン。</li>
+<li>確認メッセージが何度か出るので、最後に  Galaxy を ダウンロードモード(電源OFF 状態から VolDown + HOME + 電源ON)にして接続</li>
+<li>Frimware のダウンロードが始まる(かなり時間かかる) </li>
+</ul>
+<p>初期化されたら、データのリカバリは後回しにして、GearVR を接続し、画面の指示に従って GearVR が使えるようになっていることを確認する。</p>
+<h2 id="root_1">root化</h2>
+<p>Gear VR を使える状態で root化する方法</p>
+<p>TWRP のスレッドだと、TWRP の初回起動時に、/data を wipe するように書かているが、これは実施すると GearVR にインストールされたアプリが削除されてしまうのでと共存が出来なくなる。
+wipe しないと、TWRP から /data や /sdcard などを見ることが出来ないが、root 化や Xposed を使えるようにするぶんには不要。
+/sdcard が TWRP から見えないので、適用する ZIP は microSD に入れておく必要がある。</p>
+<ul>
+<li>開発者 モードを有効化</li>
+<li>開発者モードの設定で、OEM unlock を許可</li>
+<li>ODINで twrp をやく( http://forum.xda-developers.com/galaxy-s7/development/recovery-official-twrp-herolte-t3333770 )</li>
+<li>twrp を起動して、以下の ZIP を<em>順</em>に適用。途中で再起動すると S7 が起動しなくなるケースもあるので注意<br />
+  /data のマウントができないエラーは無視   </li>
+<li>SuperSU の ZIP を適用( https://download.chainfire.eu/932/SuperSU/BETA-SuperSU-v2.71-20160331103524.zip)</li>
+<li>dm-verity-opt-encrypt.zip を適用 ( https://idlekernel.com/fun-stuff-trust-me/no-verity-opt-encrypt.zip )</li>
+<li>xposed の ZIP を適用(http://forum.xda-developers.com/xposed/unofficial-xposed-samsung-lollipop-t3180960) (xposed が不要ならいらない)</li>
+<li>dm-verity-opt-encrypt.zip を再度適用 (xposed が不要ならいらない)</li>
+<li>再起動</li>
+<li>時間がかかるがしばらく待機</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

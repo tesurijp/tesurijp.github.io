@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>SideLoad - てすりのよしなし事</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">てすりのよしなし事</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">アプリのサイドロード</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">インストール</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">アンインストール</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>Gear S からは、開発者署名を行なう必要があり、wgt のサイドロードは出来なくなっています。</p>
+<h2 id="_1">アプリのサイドロード</h2>
+<p>Android と同様に マーケット外からでもアプリをサイドロードでインストールできます。<br />
+配布されるフォーマットは .wgt です。(拡張子を ZIP に変えれば中身を見ることも出来ます)</p>
+<p>サイドロードには Tizen SDK が必要です。
+正確には Tizen SDK をインストールしたフォルダにある  tools/sdb.exe が必要です。<br />
+<a href="/image/SideLoad/sdb.zip">sdb.zip</a><br />
+android の adb.exe に相当するようで、機能も近いものがあります。  </p>
+<p>Gear 端末の [設定]-[Gearの情報]-[USBデバッグ] という設定があるので、これを ON にします。
+この状態で、PC に接続すると sdb での接続が可能です。</p>
+<h2 id="_2">インストール</h2>
+<p>インストールを行なうには、wgt のパッケージを持ってきて<br />
+<code>sdb install [パッケージファイル]</code><br />
+とするだけです。</p>
+<h2 id="_3">アンインストール</h2>
+<p>アンインストールは少し厄介です。<br />
+ソフトウェアのパッケージID が必要ですが、TizenSDK で作成してみる限りでは ランダムに決まってしまう(？)ものらしく、作者自身も意識していない可能性があります。</p>
+<p>ともあれ、パッケージID が判っている場合は、<br />
+<code>sdb uninstall [パッケージID]</code><br />
+でアンインストールできます。  </p>
+<p>パッケージIDが不明な場合は、インストールした wgt ファイルの中から探すことが出来ます。<br />
+拡張子を .zip にして展開すると中に config.xml というファイルが入っています。<br />
+このファイル内の tizen:application タグに書かれた package アトリビュートがそのアプリのパッケージIDとなります。</p>
+<p>config.xml が以下のような内容であれば、パッケージID は j42qKnjujT ということになります。</p>
+<p><code>xml
+ &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+ &lt;widget xmlns:tizen="http://tizen.org/ns/widgets"  xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/basic"  version="1.0.0" viewmodes="maximized"&gt;
+     &lt;tizen:application id="j42qKnjujT.basic" package="j42qKnjujT"  required_version="2.2"/&gt;
+     &lt;content src="index.html"/&gt;
+     &lt;feature name="http://tizen.org/feature/screen.size.all"/&gt;
+     &lt;icon src="icon.png"/&gt;
+     &lt;name&gt;basic&lt;/name&gt;
+ &lt;/widget&gt;</code></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
