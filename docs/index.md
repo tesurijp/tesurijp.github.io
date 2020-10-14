@@ -14,7 +14,8 @@
   [VSCode](Windows/VSCode)  
   [PortProxy](Windows/PortProxy)  
   [VMWareをDockerMachinenにする](Windows/Docker-VMWare)  
-  [GPD Pocketのクリーンインストール](Windows/GpdPocket-CleanInstall)
+  [GPD Pocketのクリーンインストール](Windows/GpdPocket-CleanInstall)  
+  [Thrustmaster T16000 Hotas設定](Windows/Thrustmaster)
 - Chromebook  
   [VSCode](Chromebook/VSCode)  
   [ReaderStore](Chromebook/ReaderStore)  
