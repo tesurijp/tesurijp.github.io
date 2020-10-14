@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>ChromeBook でVisual Studio Codeを使う - てすりのよしなし事</title>
+        <title>Thrustmaster T.16000M FCS HOTAS - てすりのよしなし事</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -52,13 +52,9 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#chromebook-visual-studio-code" class="nav-link">ChromeBook でVisual Studio Codeを使う</a>
+            <li class="nav-item" data-level="1"><a href="#thrustmaster-t16000m-fcs-hotas" class="nav-link">Thrustmaster T.16000M FCS HOTAS</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">選択肢</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">はまるところ</a>
+            <li class="nav-item" data-level="2"><a href="#target" class="nav-link">TARGET 用設定ファイル</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -69,47 +65,12 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="chromebook-visual-studio-code">ChromeBook でVisual Studio Codeを使う</h1>
-<h2 id="_1">選択肢</h2>
-<p>Chromebook で利用できる Visual Studio Codeはいくつかある</p>
+<h1 id="thrustmaster-t16000m-fcs-hotas">Thrustmaster T.16000M FCS HOTAS</h1>
+<h2 id="target">TARGET 用設定ファイル</h2>
 <ul>
-<li>Visual Studio Code本物<br />
-  1.50移行、amd64だけでなく arm64版も公式のVisual Studio Codeが提供されるようになったので、得に拘りがなければこれを使う。 </li>
-<li>オープンソースビルド<br />
-  ビルドしている人が違う程度で、どちらも基本的な差はない。<br />
-  code-ossとは数ヶ月単位で更新されているが、VSCodiumは本家から半日から1日遅れぐらいのペースで更新される。 
-  安定した動作が必要なら code-oss、extensionなどのバージョンも揃えておくなど最新バージョンを追い掛けるならVSCodium</li>
-<li>VSCodium  </li>
-<li>code-oss  </li>
-<li>code-server
-  Visual Studio Codeをオンラインで提供している coder のオープンソース/オンプレ版<br />
-  crostiniでサーバー起動し、PWAとして動作させる</li>
-</ul>
-<p>code-serverは、本体のChrome上で動作するので、標準のIMEによる日本語入力が可能<br />
-他は、crostini上で動かすことになるため crostini上の IME(fcitx)の設定が必要
-動作も、code-serverが若干軽量</p>
-<h2 id="_2">はまるところ</h2>
-<h3 id="vscodium">VSCodium</h3>
-<p>1.47.xx はarm64環境では動作しないので、1.46.1 か、1.48.1以降を利用する。</p>
-<p>1.46.1 以降、拡張のマーケットプレイスが<a href="https://open-vsx.org/">外部</a>のものに変更されている(マーケットプレイスのライセンスの問題)<br />
-公開されている拡張がかなり少ないので、このまま使うのは厳しい
-本家のマーケットプレイスを使うには /usr/share/codium/resources/app/product.json を書き換える必要がある。</p>
-<pre><code class="json">  &quot;extensionsGallery&quot;: {
-    &quot;serviceUrl&quot;: &quot;https://open-vsx.org/vscode/gallery&quot;,
-    &quot;itemUrl&quot;: &quot;https://open-vsx.org/vscode/item&quot;
-  },
-</code></pre>
-
-<p>↓</p>
-<pre><code class="json">  &quot;extensionsGallery&quot;: {
-    &quot;serviceUrl&quot;: &quot;https://marketplace.visualstudio.com/_apis/public/gallery&quot;,
-    &quot;cacheUrl&quot;: &quot;https://vscode.blob.core.windows.net/gallery/index&quot;,
-    &quot;itemUrl&quot;: &quot;https://marketplace.visualstudio.com/items&quot;
-  },
-</code></pre>
-
-<h3 id="code-server">code-server</h3>
-<p>WiFi に接続していないとcrostini でサーバーを起動しても、本体のChromeから開けないことがある。  </p></div>
+<li><a href="https://1drv.ms/u/s!AkP54Ao7_RKioL0u-G8x6CbRLsNy4A?e=0h86SI">Starwars Squadrons</a><br />
+アプリ側のレイアウト変更なし、TARGET側のレイアウト変更のみ</li>
+</ul></div>
             </div>
         </div>
 
