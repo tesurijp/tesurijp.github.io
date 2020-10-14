@@ -5,7 +5,7 @@
 Chromebook で利用できる Visual Studio Codeはいくつかある
 
 - Visual Studio Code本物  
-  amd64 版 は、Microsoftの公式バイナリ(deb)がある。arm64版は提供されていない
+  1.50移行、amd64だけでなく arm64版も公式のVisual Studio Codeが提供されるようになったので、得に拘りがなければこれを使う。 
 - オープンソースビルド  
   ビルドしている人が違う程度で、どちらも基本的な差はない。  
   code-ossとは数ヶ月単位で更新されているが、VSCodiumは本家から半日から1日遅れぐらいのペースで更新される。 
