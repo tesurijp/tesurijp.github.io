@@ -12,6 +12,7 @@
 - Windows  
   [Windows のエクスプローラ上のゴミ](Windows/Explorer)  
   [VSCode](Windows/VSCode)  
+  [WolframEngineをVSCodeで使う](Windows/WolframEngine)  
   [PortProxy](Windows/PortProxy)  
   [VMWareをDockerMachinenにする](Windows/Docker-VMWare)  
   [GPD Pocketのクリーンインストール](Windows/GpdPocket-CleanInstall)  
