@@ -3,9 +3,10 @@
 Mathematicaのカーネル/コアである [Wolfram Engine](https://www.wolfram.com/engine/)は、ユーザー登録するだけでライセンスが得られ無償で利用することが出来る。  
 
 リッチなフロントエンドであるMathematicaは含まれていないため、基本的な利用方法として以下のものが想定されている。
-- [WolframScript](https://www.wolfram.com/wolframscript/)によってスクリプト言語として利用する  
-- テキストベースの[REPL](https://ja.wikipedia.org/wiki/REPL)  
-- [Jupyter](https://jupyter.org)によるWEBフロントエンドを使った Jupyterノート  
+
+ - [WolframScript](https://www.wolfram.com/wolframscript/)によってスクリプト言語として利用する  
+ - テキストベースの[REPL](https://ja.wikipedia.org/wiki/REPL)  
+ - [Jupyter](https://jupyter.org)によるWEBフロントエンドを使った Jupyterノート  
 
 ## MathematicaとJupyter
 
