@@ -68,6 +68,7 @@ VSCodeを起動し、拡張機能のインストールを行なう
 ## 起動方法
 
 新しいWolframEngineのノートブックを作成する場合は、
+
 1. VSCodeを起動したあと F1キーを押下してVSCodeの機能実行プロンプトを開く
 1. 「Wolfram Language Create New Wolfram Language Notebook」を実行する。  
   このとき、Wolfram ぐらいまで手入力すると候補が絞られて選択しやすい
