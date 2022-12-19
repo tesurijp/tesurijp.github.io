@@ -21,9 +21,9 @@
   [VSCode](Chromebook/VSCode)  
   [ReaderStore](Chromebook/ReaderStore)  
   [CrostiniでZsh](Chromebook/Crostini-zsh)  
-- SteamDeck
-  [リモート操作](SteamDeck/SteamLink)
-  [sudo時のパスワード省略](SteamDeck/NoPassword)
+- SteamDeck  
+  [リモート操作](SteamDeck/SteamLink)  
+  [sudo時のパスワード省略](SteamDeck/NoPassword)  
   [compatdataとshadercacheのmicroSDへの移動](SteamDeck/CacheMicroSD)
 
 
