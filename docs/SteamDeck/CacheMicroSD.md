@@ -13,3 +13,8 @@ ln -sf  /run/media/mmcblk0p1/steamapps /shadercache /home/deck/.steam/steam/stea
 
 これをやると本体にインストールしたソフトもmicroSDが差さってなければエラーになるし、インストールなども途中でエラーが出たりする。   
 compatdataも、shadercacheのどちらも、さらに下階層にソフトごとのフォルダがあるので、容量を食っている個別アプリごとにmicroSDに逃してリンクを貼るほうが安全だろう。
+
+
+別の解決策  
+[ShaderCacheKiller](https://github.com/scawp/Steam-Deck.Shader-Cache-Killer)  
+同じことを気にしてる人はけっこういるようで、microSDへの移動用ツールを作ってる人がいた
