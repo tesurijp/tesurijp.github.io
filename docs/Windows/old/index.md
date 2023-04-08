@@ -2,5 +2,5 @@
 
 - Surface PRO 3  
   [SurfacePenでEvernote起動](SurfacePenでEvernote起動)  
-- VMWare
+- VMWare  
   [VMWareをDockerMachinenにする](Windows/Docker-VMWare)  

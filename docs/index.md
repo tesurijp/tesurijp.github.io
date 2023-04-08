@@ -15,6 +15,7 @@
   [PortProxy](Windows/PortProxy)  
   [GPD Pocketのクリーンインストール](Windows/GpdPocket-CleanInstall)  
   [Thrustmaster T16000 Hotas設定](Windows/Thrustmaster)
+  [Matebook E go](Windows/MatebookEGo)
 - SteamDeck  
   [リモート操作](SteamDeck/SteamLink)  
   [sudo時のパスワード省略](SteamDeck/NoPassword)  
