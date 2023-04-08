@@ -25,3 +25,4 @@
 - [Tizen](Tizen/old)  
 - [Android](Android/old)  
 - [Windows](Windows/old)
+- [Chromebook](Chromebook/old)

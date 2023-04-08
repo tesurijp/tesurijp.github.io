@@ -1,4 +1,5 @@
 現役ではない機種の話題
+
 - Cosmo Communicator
   [root化](Cosmo-Root)
 - Galaxy S7 (SM-G930FD)  
