@@ -19,12 +19,14 @@
 ## Windows  
 
   [Windows のエクスプローラ上のゴミ](Windows/Explorer)  
-  [VSCode](Windows/VSCode)  
-  [WolframEngineをVSCodeで使う](Windows/WolframEngine)  
   [PortProxy](Windows/PortProxy)  
-  [GPD Pocketのクリーンインストール](Windows/GpdPocket-CleanInstall)  
   [Thrustmaster T16000 Hotas設定](Windows/Thrustmaster)  
   [Matebook E go](Windows/MatebookEGo)
+
+## VSCode
+
+  [VSCode](VSCode/VSCode)  
+  [WolframEngineをVSCodeで使う](VSCode/WolframEngine)  
 
 ## GPD Win4
 
