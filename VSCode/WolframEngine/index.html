@@ -1,0 +1,399 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>WolframEngineの活用 - てすりのよしなし事</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#wolframengine" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="てすりのよしなし事" class="md-header__button md-logo" aria-label="てすりのよしなし事" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            てすりのよしなし事
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              WolframEngineの活用
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="てすりのよしなし事" class="md-nav__button md-logo" aria-label="てすりのよしなし事" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    てすりのよしなし事
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    てすりのよしなし事
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mathematicajupyter" class="md-nav__link">
+    <span class="md-ellipsis">
+      MathematicaとJupyter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-studio-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Studio Code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-studio-code-wolframengine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Studio Codeで WolframEngineを使う
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visual Studio Codeで WolframEngineを使う">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      VSCodeのインストール
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wolframengine_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      WolframEngineのインストール
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wolframengine_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      WolframEngineのライセンス設定
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wolframengine_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      WolframEngine用拡張機能のインストール
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      起動方法
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="wolframengine">WolframEngineの活用</h1>
+<p>Mathematicaのカーネル/コアである <a href="https://www.wolfram.com/engine/">Wolfram Engine</a>は、ユーザー登録するだけでライセンスが得られ無償で利用することが出来る。  </p>
+<p>リッチなフロントエンドであるMathematicaは含まれていないため、基本的な利用方法として以下のものが想定されている。</p>
+<ul>
+<li><a href="https://www.wolfram.com/wolframscript/">WolframScript</a>によってスクリプト言語として利用する  </li>
+<li>テキストベースの<a href="https://ja.wikipedia.org/wiki/REPL">REPL</a>  </li>
+<li><a href="https://jupyter.org">Jupyter</a>によるWEBフロントエンドを使った Jupyterノート  </li>
+</ul>
+<h2 id="mathematicajupyter">MathematicaとJupyter</h2>
+<p>コードとドキュメント、データと計算結果、計算過程などを一つにまとめるノートブックを作成するツールという点は同じ<br />
+WolframEngineのフロントエンドとして利用して、計算した結果を数式や行列形式で表示したりグラフで表示するといった基本的な操作はそのまま行なえる。  </p>
+<p>Jupyterは、もともとPythonのためのフロントエンドであったが、現在では多くの言語に対応しており、外部のツールやプラグインによる機能の拡張が積極的に行なわれているが、WolframLanguageのための拡張というわけではないので、専用の機能などは利用できない。<br />
+MathematicaはWolframLanguageのためのフロントエンドであり、多種の言語のためのフロントエンドにはならないが、専用であるために専用の機能が豊富。<br />
+たとえば<a href="https://reference.wolfram.com/language/ref/Manipulate.html">Manipulate</a>のようなものは、Jupyterでは利用できず、スライダーの絵が表示された画像のアウトプットだけになる。<br />
+また、コンセプトの違いとしてMathematicaのノートは階層的なセル構造を持つが、Jupyterは完全にフラットであり階層構造を作ることは出来ない。<br />
+ドキュメントは、<a href="https://ja.wikipedia.org/wiki/Markdown">Markdown</a>で記述する。GUIで文字修飾を行なったりはしない。<br />
+ファイル形式の互換性もないため、相互に開くことも出来ない。</p>
+<h2 id="visual-studio-code">Visual Studio Code</h2>
+<p><a href="https://code.visualstudio.com/">Visual Studio Code(VSCode)</a>は、Microsoft のオープンソースのテキストエディタで、GUIのテキストエディタとしてはWindows、Linux、macOS通してデファクトスタンダードの地位を揺ぎないものにしている。<br />
+VSCodeは、初期の段階からPython向けの拡張機能によってJupyterのフロントエンドとなることが出来たが、現在はJupyterのコア機能を VSCodeに取り込むことでPython以外のJupyterカーネルも効率的に利用できるようになっている。  </p>
+<p>VSCode上、WolframLanguageは、WolframScriptの開発環境として文法のサポートやデバッグなどのシンプルなものから、Jupyterを利用したノートブック形式での活用など様々な方法でサポートされている。</p>
+<p>本来のJupyterは、WEBベースで実行するシステムのため、リモートからも操作できるなどの利点があるが、ローカルマシン上で実行するだけであれば環境の作成など手間がかかる点がデメリットになる。<br />
+VSCodeでJupyterを利用する場合、利用時にのみ起動させノートブックの管理も通常のファイル管理と同様に行なうことが出来るようになる。  </p>
+<h2 id="visual-studio-code-wolframengine">Visual Studio Codeで WolframEngineを使う</h2>
+<p>利用手順は以下のとおり</p>
+<ol>
+<li>VSCodeのインストール</li>
+<li>WolframEngineのインストール</li>
+<li>WolframEngineのライセンス設定</li>
+<li>WolframEngine用拡張機能のインストール</li>
+</ol>
+<h3 id="vscode">VSCodeのインストール</h3>
+<p><a href="https://code.visualstudio.com/">公式サイト</a>から、Stableをダウンロードしてインストールする。<br />
+Windows 11であれば、Microsoft Storeからもインストールできる。</p>
+<h3 id="wolframengine_1">WolframEngineのインストール</h3>
+<p><a href="https://www.wolfram.com/engine">公式サイト</a>から、ダウンロードしインストールする。<br />
+WolframEngineのテキストベースのREPLとして、WolframScriptも合わせてインストールされる。  </p>
+<h3 id="wolframengine_2">WolframEngineのライセンス設定</h3>
+<p>WolframEngineをダウンロードすると、<a href="https://www.wolfram.com/engine/free-download-thank-you">ライセンス取得のページ</a>に遷移する。<br />
+Wolfram IDの作成と合わせて、ライセンスの取得が行なえる。  </p>
+<p>WolrramScript/WolframEngineを起動すると初回に、Wolfram IDの入力を求められる。<br />
+ここで、ライセンス取得したIDを入力すれば、WolframEngineのライセンス認証が完了する  </p>
+<h3 id="wolframengine_3">WolframEngine用拡張機能のインストール</h3>
+<p>VSCodeを起動し、拡張機能のインストールを行なう<br />
+拡張機能を検索するさいに、Wolframなどのキーワードを入れると絞り込める。<br />
+いくつか種類はあるが、<a href="https://marketplace.visualstudio.com/items?itemName=njpipeorgan.wolfram-language-notebook">Wolfram Language Notebook</a>という名前のものが、Jupyterもサポートした拡張機能になっている。</p>
+<p>ローカルPCでの利用かつ、MathematicaとWolframEngineが両方インストールされているといった環境でなければ、設定の変更などは必要ない。</p>
+<h2 id="_1">起動方法</h2>
+<p>新しいWolframEngineのノートブックを作成する場合は、</p>
+<ol>
+<li>VSCodeを起動したあと F1キーを押下してVSCodeの機能実行プロンプトを開く</li>
+<li>「Wolfram Language Create New Wolfram Language Notebook」を実行する。<br />
+  このとき、Wolfram ぐらいまで手入力すると候補が絞られて選択しやすい</li>
+</ol>
+<p>作成済みのノートブックを開く場合は、ファイルメニューから該当のファイルを選べば、自動的にJupyterエディタが開かれる</p>
+<p>Jupyterエディタでは、「+コード」でコード入力用のセル、「+Markdown」でMarkdownドキュメント用のセルが追加される。<br />
+コード入力用のセルで、Shift+Enterでセルの内容を実行する。<br />
+カーネルが起動していない場合は、カーネルの選択がポップアップされるので、WolframScriptを選べば実行される  </p>
+<p>カーネル起動後の初回の実行結果を得る時は、テキストやグラフなどの種類ごとに数秒単位で時間がかかることがある。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="../../search/main.js"></script>
+      
+    
+  </body>
+</html>

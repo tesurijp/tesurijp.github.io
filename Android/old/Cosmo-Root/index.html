@@ -1,0 +1,399 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>CosmoCommunicatorのRoot化 - てすりのよしなし事</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cosmocommunicatorroot" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="てすりのよしなし事" class="md-header__button md-logo" aria-label="てすりのよしなし事" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            てすりのよしなし事
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CosmoCommunicatorのRoot化
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="てすりのよしなし事" class="md-nav__button md-logo" aria-label="てすりのよしなし事" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    てすりのよしなし事
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    てすりのよしなし事
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      準備
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="準備">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mtk" class="md-nav__link">
+    <span class="md-ellipsis">
+      MTKドライバ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adb" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADBドライバ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      バックアップ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      心構え
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magisk化されたカーネルの用意
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      手順
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ブート後
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="cosmocommunicatorroot">CosmoCommunicatorのRoot化</h1>
+<p>おそらく、Planetから公式の Root化ファームが公開されると思われるが、それが待てない人向け<br />
+当然、無保証<br />
+壊れても知らない  </p>
+<h2 id="_1">準備</h2>
+<h3 id="mtk">MTKドライバ</h3>
+<p>PlanetからGemini PDA用にMTKデバイス用のドライバが提供されているがCosmoの MTK6771に対応したバージョンではないので、よそから入手する。<br />
+たとえば <a href="https://androidmtk.com/download-mtk-driver-auto-installer">ここ</a><br />
+他社のMTKデバイス用に入れてたら、それが対応しているかもしれない。PCにつないで認識しなければ入れればいい。</p>
+<h3 id="adb">ADBドライバ</h3>
+<p>Googleのでも何でもいい。<br />
+root化しようとする人のPCで入ってないことはないだろう。</p>
+<p>入ってる ADBドライバがメーカー違いの物で互換性が確認できないなど自動で適用されない場合は、デバイスマネージャから「ドライバの更新」→「コンピュータを参照してドライバー〜」→「コンピューター上の利用可能な〜」で、メーカー違いでも ADBドライバを適用すれば良い。警告は出るが動作に問題はない(はず)</p>
+<p>adb および、fastboot を使うので、そのあたりが動くように。</p>
+<h3 id="_2">バックアップ</h3>
+<p>こんな作業をするのに消えて困るデータがそのままってことは無いだろうけど念のため。</p>
+<h3 id="_3">心構え</h3>
+<p>このページの情報が間違っていた、手順を間違えたなどの理由で、文鎮となっても自己責任だという覚悟<br />
+最近のスマホは軽くなってしまったが、Cosmo は文鎮にも丁度いい重さになっている。</p>
+<h3 id="magisk">Magisk化されたカーネルの用意</h3>
+<p>本来、bootイメージを吸い出してMagisked Patchをするのが筋なのだが、Patchされたboot.imgを公開してくているので、有り難く頂戴する。<br />
+<a href="https://www.oesf.org/forum/index.php?showtopic=35879&amp;st=15&amp;p=292918&amp;#entry292918">こちらのポスト</a></p>
+<h2 id="_4">手順</h2>
+<ol>
+<li>
+<p>設定のビルド番号のタップを繰り返して、開発者モードを有効化</p>
+</li>
+<li>
+<p>開発者モードで、USBデバッグと OEM Unlock を有効化</p>
+</li>
+<li>
+<p>PCについないで、adb reboot download (fastboot ではない)</p>
+</li>
+<li>
+<p>downloadモードではなく fastbootで起動する。</p>
+</li>
+<li>
+<p>PCにつないで fastboot でつながることを確認</p>
+</li>
+<li>
+<p>fastboot flashing unlock (いらないかも)</p>
+</li>
+<li>
+<p>fastboot flash boot boot-magisk .img</p>
+</li>
+<li>
+<p>fastboot reboot</p>
+</li>
+</ol>
+<p>異常のあるカーネルなのでブートしない旨が表示されるなら、どこかが間違っている。<br />
+一旦、オリジナルの boot.imgを焼き直して仕切り直す。</p>
+<p>異常のあるカーネルなので、5秒後にブートするといった内容が表示されたら成功<br />
+初回起動は、全データがフォーマットされるので時間がかかる。気長に待とう。</p>
+<h2 id="_5">ブート後</h2>
+<p><a href="https://github.com/topjohnwu/Magisk/releases/">ここ</a>から、Magisk Managerの apk をダウンロードしてインストール<br />
+インストール後、Magisk が古いから更新とか言われるので適当にアップデート  </p>
+<p>再起動するたびに、5秒後にブート〜のようなメッセージは出るが気にしない。</p>
+<p>/systemの書き換えは出来ないらしく、ROM内アプリの削除はうまくいかない。
+AdAway は、systemless設定を有効に。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="../../../search/main.js"></script>
+      
+    
+  </body>
+</html>
