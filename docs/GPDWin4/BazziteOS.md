@@ -48,34 +48,45 @@ systemd で sshを有効に切替える。
 Bazzite OSは、気軽に使えるようになっているが、悪い意味でLinuxである部分を色濃く残している。  
 ここで手間取るようなら BazziteOS は向いてない。Windowsに戻すか、SteamDeckを使おう。
 
-## 関連ツールのインストール・設定
+## 必須と思われるツールのインストール・設定
 
 ターミナルを起動すると見せられる ujust コマンドでDecky やHHDなどいろいろインストールできるらしい。
 
 自分は、Bazziteで用意されたものではなく、各ツールを個別に入れた。
 
-### [HHD](https://github.com/hhd-dev/hhd)
-
-コントローラ関連の処理をいろいろやってくれるデーモン
-
 ### [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader)
 
 SteamDeckでカスタムツールを入れるための基本フレームワークの一つ  
+Bazzite OSでも基本。たいてのツール類は、これが起点なので入れる。  
 SteamDeckと異なり、BazziteOSでは startボタンでは開かない。  
 デフォルトでは 背面ボタンで起動する。
+
+### HHD関連
+
+#### [HHD](https://github.com/hhd-dev/hhd)
+
+いろいろやってくれるデーモン  
+
+- コントローラ関連の処理  
+  Steamアプリ上で、ジャイロを使うには、HHDで DualSenseとして認識させる必要がある。  
+- TDP制御
+- RGBライト設定  
+  GPD Win4 では適切に設定できない。  
+
+#### [HHD-Decky](https://github.com/hhd-dev/hhd-decky)
+
+Decky Plugin として、HHDの設定変更を行なうUI  
+設定ファイルを手書きしたり、WEB UI もあるが、こちらを使うのが一番使い勝手が良い。  
+背面ボタンで Decky を起動してそこから設定するか、背面ボタン2度押しで、専用のUIが起動する。
 
 ### [GPD-WinControl](https://github.com/honjow/GPD-WinControl)
 
 背面の二つのキー割当て、マウスモードでの各ボタンの割当ての変更を行なう Decky Plugin  
-見栄えはともかく、Windows 用のものとほぼ同等のことが出来る。
-RGB ライトの変更も行える。
+見栄えはともかく、Windows 用のものとほぼ同等のことが出来る。  
+RGB ライトの変更する場合は、HHDの制御を無効化して、こちらで設定する。  
 
 ボタン割当ての変更は出来るのだが、HHDのホットキーとして利用する場合、背面ボタンはSysReqと PAUSE(それぞれ工場出荷状態) でなければならないので、実質変更できない。
-
-### [HHD-Decky](https://github.com/hhd-dev/hhd-decky)
-
-Decky Plugin として、HHDの設定変更を行なうUI
-
+マウスモードは適当にいじっても問題ない。
 
 ## その他
 
